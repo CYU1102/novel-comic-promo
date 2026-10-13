@@ -1,0 +1,29 @@
+# 小说推广漫画 Codex Skill
+
+将用户提供的中文小说改编为手机竖屏推广漫画。这个 skill 指导 Codex 先完成逐页脚本，再制作角色参考、分格画面、中文气泡台词和整套图片，并按页归档与质检。
+
+适用于需要**封面＋多页漫画**的小说推广任务；页数、标题和画风以当次要求为准。仓库附有《偏爱真诚人》的 Q 版样图与版式规范，作为可选的视觉参考。
+
+## 使用方式
+
+将本仓库克隆到 Codex 的 skills 目录：
+
+```powershell
+git clone https://github.com/CYU1102/novel-comic-promo.git "$HOME\.codex\skills\novel-comic-promo"
+```
+
+之后在任务中调用：
+
+```text
+$novel-comic-promo 用我上传的小说制作手机竖屏 Q 版推广漫画。先整理完整逐页脚本，再制作图片。
+```
+
+制作时可指定总张数、标题、尺寸、参考画风和结尾悬念。Q 版方向要求左上角的**连续编号＋作品名融入背景**，保持可读，不另开白底框；对白、旁白、心声和音效使用适合各自内容的文字框。
+
+## 仓库内容
+
+- [`SKILL.md`](SKILL.md)：任务范围与制作流程。
+- [`references/`](references/)：逐页脚本、角色连续性、Q 版版式和质检规范。
+- [`assets/`](assets/)：画风和版式参考图，使用时观察视觉节奏，不逐格照搬。
+
+![Q 版样图总览](assets/pianai-q-v7-preview.jpg)
